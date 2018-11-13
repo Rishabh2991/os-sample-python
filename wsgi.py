@@ -1,6 +1,6 @@
 from flask import Flask,request,jsonify
 import requests
-app = Flask(__name__)
+application = Flask(__name__)
 
 @app.route('/',methods=['POST'])
 def temperature():
@@ -22,4 +22,4 @@ def temperature():
 #	return 'Hello'
 
 if __name__ == '__main__':
-  app.run(debug=True)
+  application.run(debug=True)
