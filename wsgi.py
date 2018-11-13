@@ -2,7 +2,7 @@ from flask import Flask,request,jsonify
 import requests
 application = Flask(__name__)
 
-@app.route('/',methods=['POST'])
+@application.route('/',methods=['POST'])
 def temperature():
 
  req_data = request.get_json()
